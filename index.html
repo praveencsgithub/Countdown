@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown-App-Vanilla-JS</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+         input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+    
+    </style>
+
+</head>
+<body class="bg-gray-800 text-white h-[100vh]">
+    <div class="container flex-col flex justify-center items-center h-[80vh]">
+        <h1 class="text-gray-300 text-[3rem] text-center">A Javascript countdown App</h1>
+    <input class="text-gray-600 w-[80%] rounded-xl my-6 p-2 text-[22px] text-center border-2 border-black" type="number" name="c-input" id="c-input" placeholder="Enter a NUMBER">
+    <div class="text-center text-[40px] h-[55px] my-6 " id="countdown">
+        0
+    </div>
+
+    <div>
+        <button class="text-gray-300 font-bold bg-blue-400 border-2 border-black rounded-lg p-2 m-2" id="start-btn">Start</button>
+        <button class="text-gray-300 font-bold bg-red-400 border-2 border-black rounded-lg p-2 m-2" id="reset-btn">reset-btn</button>
+    </div>
+    
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
